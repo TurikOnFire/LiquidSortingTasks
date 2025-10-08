@@ -20,7 +20,7 @@ public class Configuration {
         System.out.println("Настройка головоломки 'Сортировка жидкостей'");
         System.out.println("=============================================");
 
-        System.out.println("Wanna quick? y/n");
+        System.out.println("Хочешь быстрый запуск? y/n");
         if (scanner.next().toLowerCase().startsWith("y")) {
             configureQuickStart();
         } else {
