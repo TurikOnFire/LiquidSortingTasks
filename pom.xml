@@ -75,6 +75,24 @@
                     </configuration>
                 </execution>
                 <execution>
+                    <id>task11-jar</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                    <configuration>
+                        <classifier>task11</classifier>
+                        <includes>
+                            <include>task11/**</include>
+                        </includes>
+                        <archive>
+                            <manifest>
+                                <mainClass>task11.LiquidSortSolver</mainClass>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </execution>
+                <execution>
                     <id>task2-jar</id>
                     <phase>package</phase>
                     <goals>
