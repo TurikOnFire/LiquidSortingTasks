@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FileShare — загрузка файлов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Загрузить файл и получить временную ссылку</h1>
+
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" required />
+        <button type="submit">Загрузить</button>
+    </form>
+
+    <div id="status" class="hidden"></div>
+
+    <div id="result" class="hidden">
+        <p>Ссылка для скачивания: <a id="downloadLink" href="#" target="_blank"></a></p>
+        <p id="fileInfo"></p>
+        <p><button id="showMeta">Показать статистику</button></p>
+        <pre id="metaJson" class="hidden"></pre>
+    </div>
+</div>
+
+<script src="upload.js"></script>
+</body>
+</html>
